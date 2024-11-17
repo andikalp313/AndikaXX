@@ -1,5 +1,4 @@
 "use client";
-import BlogList from "@/features/service-page/components/BlogList";
 import Product from "@/features/service-page/Product";
 import { getEntries } from "@/lib/contentful";
 export default async function Home() {

@@ -34,8 +34,8 @@ const BlogList: FC<BlogListProps> = ({ blogs }) => {
           slidesPerView={1}
           spaceBetween={20}
           navigation
-          pagination={{ clickable: true }} // Clickable pagination
-          autoplay={{ delay: 3000, disableOnInteraction: false }} // Autoplay with 3-second delay
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
           breakpoints={{
             640: { slidesPerView: 1 },
             768: { slidesPerView: 2 },

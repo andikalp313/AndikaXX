@@ -1,4 +1,3 @@
-import AboutSection from "@/features/home/components/AboutSection";
 import AboutPageComp from "@/features/about-us/components/AboutSection";
 import React from "react";
 const AboutUs = () => {

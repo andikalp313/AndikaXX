@@ -37,3 +37,21 @@ export const getEntries = async (page: number) => {
     console.log(error);
   }
 };
+
+export const getEntry = async (entryId: string) => {
+  try {
+    const { sys, fields }: responseEntry = await client.getEntry(entryId);
+    return {
+      entryId: sys.id,
+      title: fields.title,
+      description: fields.description,
+      thumbnail: "https:" + fields.thumbnail.fields.file.url,
+      author: fields.author,
+      category: fields.category,
+      createdAt: fields.createdAt,
+      content: fields.content,
+    };
+  } catch (error) {
+    console.log(error);
+  }
+};

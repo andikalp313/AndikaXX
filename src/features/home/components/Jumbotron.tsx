@@ -26,7 +26,7 @@ function ValueProposition() {
       transition={{ duration: 1, delay: 0.5 }}
       className="flex flex-col items-start gap-2 w-full lg:w-[495px] text-center lg:text-left"
     >
-      <span className=" mx-auto text-[20px] md:text-[24px] font-semibold font-plusJakartaSans">
+      <span className=" text-[20px] md:text-[24px] font-semibold font-plusJakartaSans">
         Premium Imported Robotics
       </span>
       <span className="text-gray-400 text-[18px] md:text-[20px] font-medium leading-[1.5] font-plusJakartaSans">
