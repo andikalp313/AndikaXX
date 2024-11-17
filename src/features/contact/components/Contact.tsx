@@ -38,7 +38,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <section className="relative bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-16 h-screen">
+    <section className="relative bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-2 h-screen">
       {/* Particles Effect */}
       <Particles
         options={{
@@ -62,10 +62,10 @@ const ContactForm: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="text-center mb-16"
         >
-          <h1 className="text-cyan-300 font-plusJakartaSans text-4xl md:text-6xl font-bold leading-snug">
+          <h1 className="text-cyan-300 font-plusJakartaSans text-4xl md:text-6xl font-bold leading-snug md:mt-20">
             Get in Touch
           </h1>
-          <p className="mt-4 text-gray-400 font-plusJakartaSans text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
+          <p className="mt-4 text-gray-400 font-plusJakartaSans text-lg md:text-xl leading-relaxed max-w-3xl mx-auto md:mb-20">
             We'd love to hear from you! Feel free to reach out via email or
             WhatsApp.
           </p>

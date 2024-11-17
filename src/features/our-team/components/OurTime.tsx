@@ -26,7 +26,7 @@ export default function OurTeam() {
             name: "Andika Luhur Pambudi",
             position: "Chief Executive Officer (CEO)",
             expertise: "Visionary in AI and Robotics Strategy",
-            photoUrl: "/images/andika.jpg",
+            photoUrl: "/images/andika.webp",
           },
           ...response.data.results.map((member: any, index: number) => ({
             id: index + 1,

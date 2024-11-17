@@ -30,7 +30,7 @@ export default function AboutPageComp() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             whileHover={{ scale: 1.05 }}
-            className="relative w-full lg:w-[600px] h-[350px] md:h-[500px] lg:h-[600px] bg-[url('/images/aboutrobotic.jpg')] bg-cover bg-center rounded-[30px] shadow-2xl shadow-cyan-500/30 overflow-hidden"
+            className="relative w-full lg:w-[600px] h-[350px] md:h-[500px] lg:h-[600px] bg-[url('/images/aboutrobotic.webp')] bg-cover bg-center rounded-[30px] shadow-2xl shadow-cyan-500/30 overflow-hidden"
           >
             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white p-6 lg:p-12">
               <h2 className="text-2xl md:text-4xl font-bold">

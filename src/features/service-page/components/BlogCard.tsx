@@ -56,7 +56,7 @@ const BlogCard: FC<BlogCardProps> = ({ blog, className }) => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-lg font-bold text-[#00FFFF] mb-2 line-clamp-2 hover:underline hover:text-cyan-300"
+            className="text-lg font-bold text-[#00FFFF] mb-2 line-clamp-1 hover:underline hover:text-cyan-300"
           >
             {blog.title}
           </motion.h2>
@@ -66,7 +66,7 @@ const BlogCard: FC<BlogCardProps> = ({ blog, className }) => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-gray-300 text-sm line-clamp-4"
+            className="text-gray-300 text-sm line-clamp-3"
           >
             {blog.description}
           </motion.p>

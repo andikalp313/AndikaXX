@@ -30,10 +30,10 @@ const BlogList: FC<BlogListProps> = ({ blogs }) => {
       {/* Blog Carousel */}
       <div className="w-full mt-12">
         <Swiper
-          modules={[Navigation, Pagination, Autoplay]} // Modules being used
-          slidesPerView={1} // Default slide visible
-          spaceBetween={20} // Space between slides
-          navigation // Enable navigation
+          modules={[Navigation, Pagination, Autoplay]}
+          slidesPerView={1}
+          spaceBetween={20}
+          navigation
           pagination={{ clickable: true }} // Clickable pagination
           autoplay={{ delay: 3000, disableOnInteraction: false }} // Autoplay with 3-second delay
           breakpoints={{

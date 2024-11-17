@@ -15,7 +15,7 @@ export default function AboutSection() {
             animate={{ opacity: 1, scale: 1, rotate: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             whileHover={{ scale: 1.08, rotate: 3 }}
-            className="w-full lg:w-[600px] h-[300px] md:h-[450px] lg:h-[550px] bg-[url('/images/aboutrobotic.jpg')] bg-cover bg-center rounded-[35px] lg:rounded-[50px] shadow-2xl shadow-cyan-500/30 transform transition-transform"
+            className="w-full lg:w-[600px] h-[300px] md:h-[450px] lg:h-[550px] bg-[url('/images/aboutrobotic.webp')] bg-cover bg-center rounded-[35px] lg:rounded-[50px] shadow-2xl shadow-cyan-500/30 transform transition-transform"
           />
 
           {/* Textual Content Section */}

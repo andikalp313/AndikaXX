@@ -11,7 +11,7 @@ export default function Navbar() {
         {/* Logo and Brand Name */}
         <Link href={"/"}>
           <div className="flex items-center gap-3">
-            <div className="w-10 animate-bounce h-10 bg-[url('/images/logoroboic.jpg')] bg-center bg-cover rounded-full border border-cyan-500 shadow-lg"></div>
+            <div className="w-10 animate-bounce h-10 bg-[url('/images/logoroboic.webp')] bg-center bg-cover rounded-full border border-cyan-500 shadow-lg"></div>
             <span className="text-cyan-400 font-semibold text-lg tracking-wider ">
               AndikaX
             </span>
