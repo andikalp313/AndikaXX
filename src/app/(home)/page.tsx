@@ -6,25 +6,16 @@ interface HomeProps {
 }
 
 export default async function Home({ searchParams }: HomeProps) {
-  try {
-    const page = Number(searchParams.page) || 1;
-    const blogs = await getEntries(page);
+  const blogs = await getEntries(Number(searchParams.page) || 1);
 
-    if (!blogs) {
-      return <div>Tidak ada blog yang ditemukan.</div>;
-    }
-
-    return (
-      <div>
-        <div className="flex items-center justify-center mx-auto">
-          <HomePage />
-        </div>
-      </div>
-    );
-  } catch (error) {
-    console.error("Error fetching blogs:", error);
-    return (
-      <div>Terjadi kesalahan saat memuat data. Silakan coba lagi nanti.</div>
-    );
+  if (!blogs) {
+    return;
   }
+  return (
+    <div>
+      <div className="flex items-center justify-center mx-auto">
+        <HomePage />
+      </div>
+    </div>
+  );
 }
