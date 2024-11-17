@@ -62,7 +62,7 @@ export default function AboutSection() {
                 color: "#ffffff",
                 transition: { duration: 0.3 },
               }}
-              className="mt-6 px-8 py-3 bg-cyan-700 text-white font-semibold rounded-full shadow-lg hover:shadow-cyan-500/50 transition-all duration-200 cursor-pointer"
+              className=" mx-auto mt-6 px-8 py-3 bg-cyan-700 text-white font-semibold rounded-full shadow-lg hover:shadow-cyan-500/50 transition-all duration-200 cursor-pointer"
             >
               Discover More
             </motion.a>

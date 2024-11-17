@@ -26,7 +26,7 @@ function ValueProposition() {
       transition={{ duration: 1, delay: 0.5 }}
       className="flex flex-col items-start gap-2 w-full lg:w-[495px] text-center lg:text-left"
     >
-      <span className="text-[20px] md:text-[24px] font-semibold font-plusJakartaSans">
+      <span className=" mx-auto text-[20px] md:text-[24px] font-semibold font-plusJakartaSans">
         Premium Imported Robotics
       </span>
       <span className="text-gray-400 text-[18px] md:text-[20px] font-medium leading-[1.5] font-plusJakartaSans">
@@ -48,12 +48,12 @@ function BackgroundImageSection() {
         backgroundColor: "#1a1a1a",
       }}
     >
-      <Link href={"/service-page"}>
+      <Link className="mx-auto" href={"/service-page"}>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
-          className="flex items-center justify-center gap-2.5 px-6 py-4 bg-cyan-900 bg-opacity-75 rounded-full shadow-lg hover:bg-cyan-700 transition-colors duration-200"
+          className=" flex items-center justify-center gap-2.5 px-6 py-4 bg-cyan-900 bg-opacity-75 rounded-full shadow-lg hover:bg-cyan-700 transition-colors duration-200"
         >
           <span className="text-cyan-100 text-[20px] md:text-[24px] font-semibold cursor-pointer font-plusJakartaSans animate-pulse">
             Explore Our Products
