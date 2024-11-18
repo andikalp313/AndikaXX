@@ -10,18 +10,9 @@ interface BlogListProps {
 }
 
 const BlogList: FC<BlogListProps> = ({ blogs }) => {
-  if (!blogs.length) {
-    // Loader jika data blogs belum tersedia
-    return (
-      <div className="flex justify-center items-center h-screen">
-        <p className="text-gray-400 text-lg">Loading blogs...</p>
-      </div>
-    );
-  }
-
   return (
     <section className="flex flex-col items-center gap-10 w-full px-6 lg:px-20 py-20 text-gray-200">
-      {/* Title Section */}
+      {/* Title */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -54,7 +45,9 @@ const BlogList: FC<BlogListProps> = ({ blogs }) => {
         >
           {blogs.map((blog) => (
             <SwiperSlide key={blog.entryId}>
-              <div className="transform transition-all flex justify-center shadow-xl rounded-lg">
+              {" "}
+              {/* Use blog.id for the key */}
+              <div className="transform transition-all  flex justify-center  shadow-xl rounded-lg">
                 <BlogCard
                   blog={blog}
                   className="w-full h-full max-w-[400px] border border-cyan-400 p-4 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-300"
