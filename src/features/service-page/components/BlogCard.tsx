@@ -68,10 +68,21 @@ const BlogCard: FC<BlogCardProps> = ({ blog, className }) => {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-gray-300 text-sm line-clamp-3"
+              className="text-gray-300 text-sm line-clamp-3 mb-4"
             >
               {blog.description}
             </motion.p>
+
+            {/* Price and Buy Now Button */}
+            <div className="flex items-center justify-between mt-4">
+              <span className="text-lg font-semibold text-[#00FFFF]">
+                $2000
+              </span>
+
+              <button className="px-4 py-2 bg-[#00FFFF] text-[#1A1A1A] rounded-full font-semibold hover:bg-cyan-300 transition-colors">
+                Buy Now
+              </button>
+            </div>
           </CardContent>
         </Card>
       </Link>

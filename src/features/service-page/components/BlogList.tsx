@@ -47,7 +47,7 @@ const BlogList: FC<BlogListProps> = ({ blogs }) => {
             <SwiperSlide key={blog.entryId}>
               {" "}
               {/* Use blog.id for the key */}
-              <div className="transform transition-all hover:scale-105 flex justify-center hover:bg-opacity-80 shadow-xl rounded-lg">
+              <div className="transform transition-all  flex justify-center  shadow-xl rounded-lg">
                 <BlogCard
                   blog={blog}
                   className="w-full h-full max-w-[400px] border border-cyan-400 p-4 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-300"

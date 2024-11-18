@@ -26,9 +26,20 @@ function ValueProposition() {
       transition={{ duration: 1, delay: 0.5 }}
       className="flex flex-col items-start gap-2 w-full lg:w-[495px] text-center lg:text-left"
     >
-      <span className=" text-[20px] md:text-[24px] font-semibold font-plusJakartaSans">
+      <motion.span
+        whileHover={{
+          scale: 1.1,
+          color: "#00CCCC",
+          transition: { duration: 0.3 },
+        }}
+        className="
+    text-[20px] md:text-[24px] font-semibold font-plusJakartaSans 
+    mx-auto lg:mx-0 text-center lg:text-left block
+  "
+      >
         Premium Imported Robotics
-      </span>
+      </motion.span>
+
       <span className="text-gray-400 text-[18px] md:text-[20px] font-medium leading-[1.5] font-plusJakartaSans">
         Explore a world of advanced robotic solutions designed to revolutionize
         daily tasks, enhance precision, and bring futuristic efficiency to your
@@ -48,19 +59,19 @@ function BackgroundImageSection() {
         backgroundColor: "#1a1a1a",
       }}
     >
-      <Link className="mx-auto" href={"/service-page"}>
+      <Link className="" href={"/service-page"}>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
-          className=" flex items-center justify-center gap-2.5 px-6 py-4 bg-cyan-900 bg-opacity-75 rounded-full shadow-lg hover:bg-cyan-700 transition-colors duration-200"
+          className="flex items-center justify-center gap-2 px-6 py-4 bg-cyan-900 bg-opacity-75 rounded-full shadow-lg hover:bg-cyan-700 transition-colors duration-200 md:flex-row md:static fixed bottom-4 left-1/2 transform -translate-x-1/2 md:translate-x-0 md:bottom-auto"
         >
           <span className="text-cyan-100 text-[20px] md:text-[24px] font-semibold cursor-pointer font-plusJakartaSans animate-pulse">
             Explore Our Products
           </span>
           <motion.div
             whileHover={{ scale: 1.1 }}
-            className="flex items-center p-2.5 gap-3.5 rounded-full bg-cyan-600 hover:bg-cyan-400 transition-colors duration-200 overflow-hidden h-[50px] w-[50px] cursor-pointer"
+            className="flex items-center justify-center p-2.5 rounded-full bg-cyan-600 hover:bg-cyan-400 transition-colors duration-200 overflow-hidden h-[50px] w-[50px] cursor-pointer"
           >
             <svg
               width="36"
