@@ -22,8 +22,6 @@ const BlogDetail: FC<BlogDetailProps> = async ({ params }) => {
 
   return (
     <main className="min-h-screen bg-gradient-to-r from-gray-900 via-black to-gray-800 text-white">
-      {/* Button: Buy Now */}
-
       {/* Section 1: Blog Header */}
       <section className="py-12 px-6">
         <motion.div

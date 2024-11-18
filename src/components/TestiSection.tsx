@@ -13,7 +13,6 @@ export default function TestiSection() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Fetch 3 random users from the API
     fetch("https://randomuser.me/api/?results=3")
       .then((response) => response.json())
       .then((data) => {
