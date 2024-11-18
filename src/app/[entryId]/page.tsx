@@ -1,4 +1,5 @@
 "use client";
+
 import { getEntry } from "@/lib/contentful";
 import { format } from "date-fns";
 import { motion } from "framer-motion";
@@ -6,6 +7,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { FC } from "react";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import Link from "next/link";
 
 interface BlogDetailProps {
   params: { entryId: string };
@@ -20,6 +22,8 @@ const BlogDetail: FC<BlogDetailProps> = async ({ params }) => {
 
   return (
     <main className="min-h-screen bg-gradient-to-r from-gray-900 via-black to-gray-800 text-white">
+      {/* Button: Buy Now */}
+
       {/* Section 1: Blog Header */}
       <section className="py-12 px-6">
         <motion.div
@@ -53,6 +57,17 @@ const BlogDetail: FC<BlogDetailProps> = async ({ params }) => {
             className="object-cover rounded-lg shadow-lg"
           />
         </motion.div>
+        <Link
+          href="/contact"
+          passHref
+          className="text-gray-300 hover:text-cyan-400 transition duration-300"
+        >
+          <div className="text-center mt-4">
+            <button className="px-6 py-2 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold rounded-lg shadow-md transition">
+              Buy Now
+            </button>
+          </div>
+        </Link>
       </section>
 
       {/* Section 3: Blog Content */}
@@ -66,7 +81,6 @@ const BlogDetail: FC<BlogDetailProps> = async ({ params }) => {
         </motion.div>
       </section>
 
-      {/* Footer */}
       <footer className="py-6 text-center text-gray-500 text-sm">
         <motion.div
           initial={{ opacity: 0 }}
